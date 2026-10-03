@@ -31,10 +31,11 @@ const WORK_SAMPLES: MediaItem[] = [
   { id: "sample-bs", title: "Balance Sheet", category: "Financial Statement", src: "/briones-portfolio_files/72b91c662b8d992726d164faca8029bd.png" },
   { id: "sample-is", title: "Income Statement", category: "Financial Statement", src: "/briones-portfolio_files/c9c07ec693377bb902cb852828fd8bd5.png" },
   { id: "sample-br", title: "Bank Reconciliation", category: "Reconciliation", src: "/briones-portfolio_files/3188531c3cd5b513c6a6e336d38fdf9d.png" },
-  { id: "sample-n1", title: "Bank Reconciliation - Note 1", category: "Reconciliation Note", src: "/briones-portfolio_files/69d5573dfbbb42a97f7b3f3a56e411e8.png" },
-  { id: "sample-n2", title: "Bank Reconciliation - Note 2", category: "Reconciliation Note", src: "/briones-portfolio_files/8210398c9dbabd00ddc824ed07344551.png" },
-  { id: "sample-n3", title: "Bank Reconciliation - Note 3", category: "Reconciliation Note", src: "/briones-portfolio_files/c6eaf92f1e9c346e1468f6ef1891c175.png" },
-  { id: "sample-n4", title: "Bank Reconciliation - Note 4", category: "Reconciliation Note", src: "/briones-portfolio_files/e0422f83372ed56336019c538a90ee7a.png" },
+  { id: "sample-n1", title: "Bank Reconciliation - Note 1", category: "Reconciliation Note", src: "/briones-portfolio_files/c6eaf92f1e9c346e1468f6ef1891c175.png" },
+  { id: "sample-n2", title: "Bank Reconciliation - Note 2", category: "Reconciliation Note", src: "/briones-portfolio_files/69d5573dfbbb42a97f7b3f3a56e411e8.png" },
+  { id: "sample-n3", title: "Bank Reconciliation - Note 3", category: "Reconciliation Note", src: "/briones-portfolio_files/96f5467ae63abe13ac0f15e2122683d1.png" },
+  { id: "sample-n4", title: "Bank Reconciliation - Note 4", category: "Reconciliation Note", src: "/briones-portfolio_files/8210398c9dbabd00ddc824ed07344551.png" },
+  { id: "sample-n5", title: "Bank Reconciliation - Note 5", category: "Reconciliation Note", src: "/briones-portfolio_files/e0422f83372ed56336019c538a90ee7a.png" },
 ];
 
 // Official Brand & System Icons
@@ -399,7 +400,7 @@ export default function Home() {
                   I have extensive experience in bookkeeping and administrative work, including maintaining accurate financial records, preparing comprehensive financial reports, and managing day-to-day office transactions.
                 </p>
                 <p>
-                  These experiences have helped me become a dependable bookkeeper and administrative specialist who deeply values <strong className="text-white font-semibold">accuracy, integrity, and responsibility</strong>.
+                  These experiences have helped me become a dependable bookkeeper and administrative who deeply values <strong className="text-white font-semibold">accuracy, integrity, and responsibility</strong>.
                 </p>
                 <p>
                   I look forward to applying my skills and hands-on experience while continuously learning and growing alongside your organization.
@@ -474,7 +475,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-indigo-400 text-lg leading-none mt-1">✦</span>
-                    <span>Preparation and thorough audit of financial disbursement vouchers with complete statutory attachments.</span>
+                    <span>Preparation of financial disbursement vouchers with complete statutory attachments.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-indigo-400 text-lg leading-none mt-1">✦</span>
@@ -508,7 +509,7 @@ export default function Home() {
                 <ul className="space-y-2.5 text-zinc-300 text-sm sm:text-base font-light">
                   <li className="flex items-start gap-3">
                     <span className="text-indigo-400 text-lg leading-none mt-1">✦</span>
-                    <span>Full-charge bookkeeper maintaining, posting, and preparing double-entry financial records and general ledgers.</span>
+                    <span>Full-charge bookkeeper maintaining, posting, and preparing financial records and general ledgers.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-indigo-400 text-lg leading-none mt-1">✦</span>
@@ -603,6 +604,10 @@ export default function Home() {
                   <span className="text-indigo-400 font-bold">✓</span>
                   <span>Audit Documentation &amp; Archiving</span>
                 </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-indigo-400 font-bold">✓</span>
+                  <span>Customer &amp; Client Communication</span>
+                </li>
               </ul>
             </div>
 
@@ -629,10 +634,10 @@ export default function Home() {
                   <span className="text-indigo-400 font-bold">✓</span>
                   <span>Xero Accounting Software</span>
                 </li>
-                <li className="flex items-center gap-2">
+                {/* <li className="flex items-center gap-2">
                   <span className="text-indigo-400 font-bold">✓</span>
                   <span>Customer &amp; Client Communication</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -675,7 +680,7 @@ export default function Home() {
                 <QuickBooksLogo />
                 <div>
                   <h4 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">Intuit QuickBooks</h4>
-                  <p className="text-xs text-zinc-400">Invoicing, bank feeds, journal entries, and account reconciliation.</p>
+                  {/* <p className="text-xs text-zinc-400">Invoicing, bank feeds, journal entries, and account reconciliation.</p> */}
                 </div>
               </div>
 
@@ -684,7 +689,7 @@ export default function Home() {
                 <XeroLogo />
                 <div>
                   <h4 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Xero Accounting</h4>
-                  <p className="text-xs text-zinc-400">Cloud reconciliation, financial dashboards, and ledger tracking.</p>
+                  {/* <p className="text-xs text-zinc-400">Cloud reconciliation, financial dashboards, and ledger tracking.</p> */}
                 </div>
               </div>
 
@@ -693,7 +698,7 @@ export default function Home() {
                 <ExcelLogo />
                 <div>
                   <h4 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">Microsoft Excel &amp; Office</h4>
-                  <p className="text-xs text-zinc-400">Advanced spreadsheets, formulas, financial modeling, and pivot tables.</p>
+                  {/* <p className="text-xs text-zinc-400">Advanced spreadsheets, formulas, financial modeling, and pivot tables.</p> */}
                 </div>
               </div>
 
@@ -702,7 +707,7 @@ export default function Home() {
                 <TeamsLogo />
                 <div>
                   <h4 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">Microsoft Teams</h4>
-                  <p className="text-xs text-zinc-400">Virtual meetings, team collaboration, document sharing, and client communication.</p>
+                  {/* <p className="text-xs text-zinc-400">Virtual meetings, team collaboration, document sharing, and client communication.</p> */}
                 </div>
               </div>
 
@@ -711,7 +716,7 @@ export default function Home() {
                 <ZoomLogo />
                 <div>
                   <h4 className="text-lg font-bold text-white group-hover:text-blue-300 transition-colors">Zoom</h4>
-                  <p className="text-xs text-zinc-400">Video conferencing, client consultations, screen sharing, and remote meetings.</p>
+                  {/* <p className="text-xs text-zinc-400">Video conferencing, client consultations, screen sharing, and remote meetings.</p> */}
                 </div>
               </div>
             </div>
@@ -792,31 +797,28 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 mb-12 flex-wrap">
             <button
               onClick={() => setSampleFilter("all")}
-              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
-                sampleFilter === "all"
-                  ? "bg-white text-black shadow-lg"
-                  : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
-              }`}
+              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${sampleFilter === "all"
+                ? "bg-white text-black shadow-lg"
+                : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
+                }`}
             >
               All Samples ({WORK_SAMPLES.length})
             </button>
             <button
               onClick={() => setSampleFilter("statements")}
-              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
-                sampleFilter === "statements"
-                  ? "bg-white text-black shadow-lg"
-                  : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
-              }`}
+              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${sampleFilter === "statements"
+                ? "bg-white text-black shadow-lg"
+                : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
+                }`}
             >
               Financial Statements (3)
             </button>
             <button
               onClick={() => setSampleFilter("reconciliations")}
-              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${
-                sampleFilter === "reconciliations"
-                  ? "bg-white text-black shadow-lg"
-                  : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
-              }`}
+              className={`px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all ${sampleFilter === "reconciliations"
+                ? "bg-white text-black shadow-lg"
+                : "bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10"
+                }`}
             >
               Bank Reconciliations (6)
             </button>
