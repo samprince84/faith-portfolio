@@ -68,13 +68,22 @@ function ExcelLogo({ className = "w-6 h-6" }: { className?: string }) {
   );
 }
 
-function DatabaseLogo({ className = "w-6 h-6" }: { className?: string }) {
+function TeamsLogo({ className = "w-6 h-6" }: { className?: string }) {
   return (
-    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-800 flex items-center justify-center p-2.5 shadow-md shadow-indigo-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
-      <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+    <div className="w-12 h-12 rounded-xl bg-[#5059C9] flex items-center justify-center p-2.5 shadow-md shadow-indigo-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg role="img" viewBox="0 0 16 16" fill="white" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z" />
+        <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z" />
+      </svg>
+    </div>
+  );
+}
+
+function ZoomLogo({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-[#0B5CFF] flex items-center justify-center p-2.5 shadow-md shadow-blue-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg role="img" viewBox="0 0 24 24" fill="white" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6.5A2.5 2.5 0 0 0 1.5 9v6A2.5 2.5 0 0 0 4 17.5h8.5A2.5 2.5 0 0 0 15 15V9a2.5 2.5 0 0 0-2.5-2.5H4zm12.5 3.35v4.3l4.63 3.09c.67.45 1.57-.03 1.57-.84V7.6c0-.81-.9-1.29-1.57-.84l-4.63 3.09z" />
       </svg>
     </div>
   );
@@ -688,12 +697,21 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Institutional Systems */}
-              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-indigo-500/50 hover:bg-white/8 transition-all group">
-                <DatabaseLogo />
+              {/* Microsoft Teams */}
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-[#5059C9]/50 hover:bg-white/8 transition-all group">
+                <TeamsLogo />
                 <div>
-                  <h4 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">PIMS &amp; Enterprise Databases</h4>
-                  <p className="text-xs text-zinc-400">Government statutory reporting, voucher tracking, and inventory systems.</p>
+                  <h4 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">Microsoft Teams</h4>
+                  <p className="text-xs text-zinc-400">Virtual meetings, team collaboration, document sharing, and client communication.</p>
+                </div>
+              </div>
+
+              {/* Zoom */}
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-blue-500/50 hover:bg-white/8 transition-all group">
+                <ZoomLogo />
+                <div>
+                  <h4 className="text-lg font-bold text-white group-hover:text-blue-300 transition-colors">Zoom</h4>
+                  <p className="text-xs text-zinc-400">Video conferencing, client consultations, screen sharing, and remote meetings.</p>
                 </div>
               </div>
             </div>
