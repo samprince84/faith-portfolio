@@ -35,8 +35,82 @@ const WORK_SAMPLES: MediaItem[] = [
   { id: "sample-n2", title: "Bank Reconciliation - Note 2", category: "Reconciliation Note", src: "/briones-portfolio_files/8210398c9dbabd00ddc824ed07344551.png" },
   { id: "sample-n3", title: "Bank Reconciliation - Note 3", category: "Reconciliation Note", src: "/briones-portfolio_files/c6eaf92f1e9c346e1468f6ef1891c175.png" },
   { id: "sample-n4", title: "Bank Reconciliation - Note 4", category: "Reconciliation Note", src: "/briones-portfolio_files/e0422f83372ed56336019c538a90ee7a.png" },
-  { id: "sample-n5", title: "Bank Reconciliation - Note 5", category: "Reconciliation Note", src: "/briones-portfolio_files/96f5467ae63abe13ac0f15e2122683d1.png" },
 ];
+
+// Official Brand & System Icons
+function QuickBooksLogo({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-[#2CA01C] flex items-center justify-center p-2.5 shadow-md shadow-emerald-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg role="img" viewBox="0 0 24 24" fill="white" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm.642 4.1335c.9554 0 1.7296.776 1.7296 1.7332v9.0667h1.6c1.614 0 2.9275-1.3156 2.9275-2.933 0-1.6173-1.3136-2.9333-2.9276-2.9333h-.6654V7.3334h.6654c2.5722 0 4.6577 2.0897 4.6577 4.667 0 2.5774-2.0855 4.6666-4.6577 4.6666H12.642zM7.9837 7.333h3.3291v12.533c-.9555 0-1.73-.7759-1.73-1.7332V9.0662H7.9837c-1.6146 0-2.9277 1.316-2.9277 2.9334 0 1.6175 1.3131 2.9333 2.9277 2.9333h.6654v1.7332h-.6654c-2.5725 0-4.6577-2.0892-4.6577-4.6665 0-2.5771 2.0852-4.6666 4.6577-4.6666Z" />
+      </svg>
+    </div>
+  );
+}
+
+function XeroLogo({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-[#13B5EA] flex items-center justify-center p-2.5 shadow-md shadow-cyan-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg role="img" viewBox="0 0 24 24" fill="white" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.585 14.655c-1.485 0-2.69-1.206-2.69-2.689 0-1.485 1.207-2.691 2.69-2.691 1.485 0 2.69 1.207 2.69 2.691s-1.207 2.689-2.69 2.689zM7.53 14.644c-.099 0-.192-.041-.267-.116l-2.043-2.04-2.052 2.047c-.069.068-.16.108-.258.108-.202 0-.368-.166-.368-.368 0-.099.04-.191.111-.263l2.04-2.05-2.038-2.047c-.075-.069-.113-.162-.113-.261 0-.203.166-.366.368-.366.098 0 .188.037.258.105l2.055 2.048 2.048-2.045c.069-.071.162-.108.26-.108.211 0 .375.165.375.366 0 .098-.029.188-.104.258l-2.056 2.055 2.055 2.051c.068.069.104.16.104.258 0 .202-.165.368-.365.368h-.01zm8.017-4.591c-.796.101-.882.476-.882 1.404v2.787c0 .202-.165.366-.366.366-.203 0-.367-.165-.368-.366v-4.53c0-.204.16-.366.362-.366.166 0 .316.125.346.289.27-.209.6-.317.93-.317h.105c.195 0 .359.165.359.368 0 .201-.164.352-.375.359 0 0-.09 0-.164.008l.053-.002zm-3.091 2.205H8.625c0 .019.003.037.006.057.02.105.045.211.083.31.194.531.765 1.275 1.829 1.29.33-.003.631-.086.9-.229.21-.12.391-.271.525-.428.045-.058.09-.112.12-.168.18-.229.405-.186.54-.083.164.135.18.391.045.57l-.016.016c-.21.27-.435.495-.689.66-.255.164-.525.284-.811.345-.33.09-.645.104-.975.06-1.095-.135-2.01-.93-2.28-2.01-.06-.21-.09-.42-.09-.645 0-.855.421-1.695 1.125-2.205.885-.615 2.085-.66 3-.075.63.405 1.035 1.021 1.185 1.771.075.419-.21.794-.734.81l.068-.046zm6.129-2.223c-1.064 0-1.931.865-1.931 1.931 0 1.064.866 1.931 1.931 1.931s1.931-.867 1.931-1.931c0-1.065-.866-1.933-1.931-1.933v.002zm0 2.595c-.367 0-.666-.297-.666-.666 0-.367.3-.665.666-.665.367 0 .667.299.667.665 0 .369-.3.667-.667.666zm-8.04-2.603c-.91 0-1.672.623-1.886 1.466v.03h3.776c-.203-.855-.973-1.494-1.891-1.494v-.002z" />
+      </svg>
+    </div>
+  );
+}
+
+function ExcelLogo({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-[#107C41] flex items-center justify-center p-2.5 shadow-md shadow-emerald-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg role="img" viewBox="0 0 24 24" fill="white" className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3Z" />
+      </svg>
+    </div>
+  );
+}
+
+function DatabaseLogo({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-800 flex items-center justify-center p-2.5 shadow-md shadow-indigo-950/40 flex-shrink-0 group-hover:scale-110 transition-transform">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+      </svg>
+    </div>
+  );
+}
+
+function PhoneIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  );
+}
+
+function EmailIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+function FacebookIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg role="img" viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+    </svg>
+  );
+}
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -197,34 +271,34 @@ export default function Home() {
                 <a
                   href="tel:+639055212870"
                   title="Call +63 905-521-2870"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-emerald-500/30 border border-white/20 hover:border-emerald-400/50 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <img src="/briones-portfolio_files/c2d4d84b7b06512dec77300a0407103a.svg" alt="Phone" className="w-5 h-5 invert" />
+                  <PhoneIcon className="w-5 h-5 text-emerald-300" />
                 </a>
                 <a
                   href="mailto:faithbriones1984@gmail.com"
                   title="Email faithbriones1984@gmail.com"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-rose-500/30 border border-white/20 hover:border-rose-400/50 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <img src="/briones-portfolio_files/6d0704f77f107f0f7e621031a0b87f40.png" alt="Email" className="w-5 h-5 invert" />
+                  <EmailIcon className="w-5 h-5 text-rose-300" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/faith-b-nesbrio1984"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="LinkedIn Profile"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#0A66C2] border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <img src="/briones-portfolio_files/72eba520b9cc247025e207a250ef3eeb.svg" alt="LinkedIn" className="w-5 h-5 invert" />
+                  <LinkedInIcon className="w-5 h-5 text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/riaraivprince84/"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Facebook Profile"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-[#1877F2] border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <img src="/briones-portfolio_files/5cf389e86650420eb70dfe6eca0703fe.svg" alt="Facebook" className="w-5 h-5 invert" />
+                  <FacebookIcon className="w-5 h-5 text-white" />
                 </a>
               </div>
             </div>
@@ -588,61 +662,37 @@ export default function Home() {
             {/* Tool Cards */}
             <div className="lg:col-span-5 space-y-4">
               {/* QuickBooks */}
-              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-emerald-500/40 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center p-2 flex-shrink-0">
-                  <img
-                    src="/briones-portfolio_files/c33331a94c105394828f4928d377a1ae.png"
-                    alt="QuickBooks"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-emerald-500/50 hover:bg-white/8 transition-all group">
+                <QuickBooksLogo />
                 <div>
-                  <h4 className="text-lg font-bold text-white">Intuit QuickBooks</h4>
+                  <h4 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">Intuit QuickBooks</h4>
                   <p className="text-xs text-zinc-400">Invoicing, bank feeds, journal entries, and account reconciliation.</p>
                 </div>
               </div>
 
               {/* Xero */}
-              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-cyan-500/40 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center p-2 flex-shrink-0">
-                  <img
-                    src="/briones-portfolio_files/236ee88d6486271acb81ba1402e4398a.png"
-                    alt="Xero"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-cyan-500/50 hover:bg-white/8 transition-all group">
+                <XeroLogo />
                 <div>
-                  <h4 className="text-lg font-bold text-white">Xero Accounting</h4>
+                  <h4 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">Xero Accounting</h4>
                   <p className="text-xs text-zinc-400">Cloud reconciliation, financial dashboards, and ledger tracking.</p>
                 </div>
               </div>
 
               {/* Microsoft Excel */}
-              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-green-500/40 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center p-2 flex-shrink-0">
-                  <img
-                    src="/briones-portfolio_files/ccf093fef4e7a9a567222c79b21362f8.svg"
-                    alt="Microsoft Excel"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-emerald-600/50 hover:bg-white/8 transition-all group">
+                <ExcelLogo />
                 <div>
-                  <h4 className="text-lg font-bold text-white">Microsoft Excel &amp; Office</h4>
+                  <h4 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">Microsoft Excel &amp; Office</h4>
                   <p className="text-xs text-zinc-400">Advanced spreadsheets, formulas, financial modeling, and pivot tables.</p>
                 </div>
               </div>
 
               {/* Institutional Systems */}
-              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-indigo-500/40 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center p-2 flex-shrink-0">
-                  <img
-                    src="/briones-portfolio_files/62cd021bbc681e35e864beec45c2a8f1.png"
-                    alt="SSS & Enterprise Tools"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+              <div className="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-indigo-500/50 hover:bg-white/8 transition-all group">
+                <DatabaseLogo />
                 <div>
-                  <h4 className="text-lg font-bold text-white">PIMS &amp; Enterprise Databases</h4>
+                  <h4 className="text-lg font-bold text-white group-hover:text-indigo-300 transition-colors">PIMS &amp; Enterprise Databases</h4>
                   <p className="text-xs text-zinc-400">Government statutory reporting, voucher tracking, and inventory systems.</p>
                 </div>
               </div>
@@ -831,14 +881,14 @@ export default function Home() {
 
               <div className="space-y-4">
                 {/* Phone */}
-                <div className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:bg-white/10 transition-colors">
+                <div className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:border-emerald-500/40 hover:bg-white/10 transition-colors group">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <img src="/briones-portfolio_files/c2d4d84b7b06512dec77300a0407103a.svg" alt="Phone" className="w-6 h-6 invert" />
+                    <div className="w-12 h-12 rounded-xl bg-[#10B981] flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-emerald-950/40 group-hover:scale-105 transition-transform">
+                      <PhoneIcon className="w-6 h-6" />
                     </div>
                     <div>
                       <span className="text-xs uppercase tracking-wider text-zinc-300 font-semibold block">Phone</span>
-                      <a href="tel:+639055212870" className="text-lg font-bold text-white hover:underline">
+                      <a href="tel:+639055212870" className="text-lg font-bold text-white hover:text-emerald-300 transition-colors">
                         +63 905-521-2870
                       </a>
                     </div>
@@ -852,14 +902,14 @@ export default function Home() {
                 </div>
 
                 {/* Email */}
-                <div className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:bg-white/10 transition-colors">
+                <div className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:border-red-500/40 hover:bg-white/10 transition-colors group">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <img src="/briones-portfolio_files/6d0704f77f107f0f7e621031a0b87f40.png" alt="Email" className="w-6 h-6 invert" />
+                    <div className="w-12 h-12 rounded-xl bg-[#EA4335] flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-red-950/40 group-hover:scale-105 transition-transform">
+                      <EmailIcon className="w-6 h-6" />
                     </div>
                     <div>
                       <span className="text-xs uppercase tracking-wider text-zinc-300 font-semibold block">Email</span>
-                      <a href="mailto:faithbriones1984@gmail.com" className="text-lg font-bold text-white hover:underline break-all">
+                      <a href="mailto:faithbriones1984@gmail.com" className="text-lg font-bold text-white hover:text-red-300 transition-colors break-all">
                         faithbriones1984@gmail.com
                       </a>
                     </div>
@@ -877,20 +927,20 @@ export default function Home() {
                   href="https://www.linkedin.com/in/faith-b-nesbrio1984"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:bg-white/10 transition-colors block group"
+                  className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:border-blue-500/40 hover:bg-white/10 transition-colors block group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <img src="/briones-portfolio_files/72eba520b9cc247025e207a250ef3eeb.svg" alt="LinkedIn" className="w-6 h-6 invert" />
+                    <div className="w-12 h-12 rounded-xl bg-[#0A66C2] flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-blue-950/40 group-hover:scale-105 transition-transform">
+                      <LinkedInIcon className="w-6 h-6" />
                     </div>
                     <div>
                       <span className="text-xs uppercase tracking-wider text-zinc-300 font-semibold block">LinkedIn</span>
-                      <span className="text-base sm:text-lg font-bold text-white group-hover:underline">
+                      <span className="text-base sm:text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
                         linkedin.com/in/faith-b-nesbrio1984
                       </span>
                     </div>
                   </div>
-                  <span className="text-white text-sm">➔</span>
+                  <span className="text-white text-sm group-hover:translate-x-1 transition-transform">➔</span>
                 </a>
 
                 {/* Facebook */}
@@ -898,20 +948,20 @@ export default function Home() {
                   href="https://www.facebook.com/riaraivprince84/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:bg-white/10 transition-colors block group"
+                  className="glass-panel p-5 rounded-2xl flex items-center justify-between gap-4 border border-white/20 hover:border-indigo-500/40 hover:bg-white/10 transition-colors block group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <img src="/briones-portfolio_files/5cf389e86650420eb70dfe6eca0703fe.svg" alt="Facebook" className="w-6 h-6 invert" />
+                    <div className="w-12 h-12 rounded-xl bg-[#1877F2] flex items-center justify-center text-white flex-shrink-0 shadow-md shadow-blue-950/40 group-hover:scale-105 transition-transform">
+                      <FacebookIcon className="w-6 h-6" />
                     </div>
                     <div>
                       <span className="text-xs uppercase tracking-wider text-zinc-300 font-semibold block">Facebook</span>
-                      <span className="text-base sm:text-lg font-bold text-white group-hover:underline">
+                      <span className="text-base sm:text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
                         facebook.com/riaraivprince84
                       </span>
                     </div>
                   </div>
-                  <span className="text-white text-sm">➔</span>
+                  <span className="text-white text-sm group-hover:translate-x-1 transition-transform">➔</span>
                 </a>
               </div>
 
