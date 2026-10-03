@@ -400,7 +400,7 @@ export default function Home() {
                   I have extensive experience in bookkeeping and administrative work, including maintaining accurate financial records, preparing comprehensive financial reports, and managing day-to-day office transactions.
                 </p>
                 <p>
-                  These experiences have helped me become a dependable bookkeeper and administrative who deeply values <strong className="text-white font-semibold">accuracy, integrity, and responsibility</strong>.
+                  These experiences have helped me become a dependable bookkeeper and administrative staff who deeply values <strong className="text-white font-semibold">accuracy, integrity, and responsibility</strong>.
                 </p>
                 <p>
                   I look forward to applying my skills and hands-on experience while continuously learning and growing alongside your organization.
@@ -496,7 +496,7 @@ export default function Home() {
                   <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/20 mb-2">
                     January 2006 – October 2013
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white">Full-Charge Bookkeeper</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white">Bookkeeper</h3>
                   <div className="text-zinc-300 font-medium text-base mt-1 space-y-0.5">
                     <p>1. Taytay Sa Kauswagan, Incorporated (TSKI)</p>
                     <p>2. Paglaum Multi-Purpose Cooperative (PMPC)</p>
