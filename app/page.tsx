@@ -12,18 +12,18 @@ interface MediaItem {
 }
 
 const CERTIFICATES: MediaItem[] = [
-  { id: "cert-1", title: "Certificate of Training", src: "/briones-portfolio_files/4e3a8e33222477c9e57da8b116c6f9ce.jpg" },
-  { id: "cert-2", title: "Certificate of Completion", src: "/briones-portfolio_files/d5f65c4d0d4800f3096efb4be0c47996.jpg" },
-  { id: "cert-3", title: "Bookkeeping & Accounting Training", src: "/briones-portfolio_files/2251aa63e03232fd5de5c0387620c57f.jpg" },
-  { id: "cert-4", title: "Professional Development Certificate", src: "/briones-portfolio_files/0b681a3a17394537e87961bfac4256b4.jpg" },
-  { id: "cert-5", title: "QuickBooks & Xero Accounting", src: "/briones-portfolio_files/bef59d472005a623fbb34c4b35e947ab.jpg" },
-  { id: "cert-6", title: "Financial Reporting Certificate", src: "/briones-portfolio_files/ffd8eb309e8209d429a2a034d77f330e.jpg" },
-  { id: "cert-7", title: "Administrative Assistant Credential", src: "/briones-portfolio_files/a6f4f4e8a52dd5955bbfc3c190d4f513.jpg" },
-  { id: "cert-8", title: "Specialized Accounting Workshop", src: "/briones-portfolio_files/2418844b83a2d75a55f54ea5c267aebd.png" },
-  { id: "cert-9", title: "Cooperative Bookkeeping Accreditation", src: "/briones-portfolio_files/e265edefb98df5c5c0c78b8c34d57012.png" },
-  { id: "cert-10", title: "Financial Systems Compliance", src: "/briones-portfolio_files/9ec92cb1cfcb180a8f9aa0c7b69a16cb.png" },
-  { id: "cert-11", title: "Business Operations & Auditing", src: "/briones-portfolio_files/b069382ba63f85dd4da773903143d4bc.png" },
-  { id: "cert-12", title: "Statutory Reporting & Voucher Audit", src: "/briones-portfolio_files/304c471577542b3901ebc2f3d215f36c.png" },
+  { id: "cert-1", title: "Bookkeeping Training using Xero", src: "/briones-portfolio_files/4e3a8e33222477c9e57da8b116c6f9ce.jpg" },
+  { id: "cert-2", title: "Bookkeeping Training using QuickBooks", src: "/briones-portfolio_files/d5f65c4d0d4800f3096efb4be0c47996.jpg" },
+  { id: "cert-3", title: "English Language Proficiency", src: "/briones-portfolio_files/2251aa63e03232fd5de5c0387620c57f.jpg" },
+  { id: "cert-4", title: "Basic Virtual Assistant Training", src: "/briones-portfolio_files/0b681a3a17394537e87961bfac4256b4.jpg" },
+  { id: "cert-5", title: "Training on Financial Management", src: "/briones-portfolio_files/bef59d472005a623fbb34c4b35e947ab.jpg" },
+  { id: "cert-6", title: "Training on FEP - Debt Management and Budgeting", src: "/briones-portfolio_files/ffd8eb309e8209d429a2a034d77f330e.jpg" },
+  { id: "cert-7", title: "Customer Service Training", src: "/briones-portfolio_files/a6f4f4e8a52dd5955bbfc3c190d4f513.jpg" },
+  { id: "cert-8", title: "Proficiency Course for Executive and Administrative Personnel", src: "/briones-portfolio_files/2418844b83a2d75a55f54ea5c267aebd.png" },
+  { id: "cert-9", title: "Entrepreneurial and Business Management", src: "/briones-portfolio_files/e265edefb98df5c5c0c78b8c34d57012.png" },
+  { id: "cert-10", title: "Seminar Workshop on Cooperative Bookkeeping", src: "/briones-portfolio_files/9ec92cb1cfcb180a8f9aa0c7b69a16cb.png" },
+  { id: "cert-11", title: "Basic Supervisory Development Course", src: "/briones-portfolio_files/b069382ba63f85dd4da773903143d4bc.png" },
+  { id: "cert-12", title: "Procurement and Inventory Management System (PIMS) Orientation", src: "/briones-portfolio_files/304c471577542b3901ebc2f3d215f36c.png" },
 ];
 
 const WORK_SAMPLES: MediaItem[] = [
