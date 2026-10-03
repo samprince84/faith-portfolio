@@ -152,55 +152,59 @@ export default function Home() {
           src="/briones-portfolio_files/d1c975d14da873fff6a9a55d389d92bb.mp4"
         />
 
-        {/* Ambient radial glow */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/20 blur-[130px] rounded-full pointer-events-none" />
+        {/* Ambient radial glow & floating decorative orbs */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/20 blur-[130px] rounded-full pointer-events-none animate-pulse-glow" />
+        <div className="absolute top-1/3 left-10 w-72 h-72 bg-purple-500/15 blur-[100px] rounded-full pointer-events-none animate-float" />
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/15 blur-[120px] rounded-full pointer-events-none animate-float-reverse" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           {/* Left Column: Heading & Titles */}
           <div className="flex-1 text-center lg:text-left space-y-6">
             {/* Script Signature Name */}
             <div className="space-y-2">
-              <h1 className="font-script text-5xl sm:text-7xl lg:text-8xl text-white tracking-wide drop-shadow-lg">
+              <h1 className="font-script text-5xl sm:text-7xl lg:text-8xl text-white tracking-wide drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)] transition-transform duration-500 hover:scale-[1.01]">
                 Ma. Faith B. Briones
               </h1>
-              <div className="h-1 w-24 bg-gradient-to-r from-indigo-400 to-white mx-auto lg:mx-0 rounded-full" />
+              <div className="h-1.5 w-28 bg-gradient-to-r from-indigo-400 via-purple-300 to-white mx-auto lg:mx-0 rounded-full shadow-lg" />
             </div>
 
             {/* Subtitle */}
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-widest text-zinc-100 uppercase leading-snug">
               VIRTUAL BOOKKEEPER <br />
-              <span className="text-indigo-200">&amp; ADMINISTRATIVE ASSISTANT</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-white to-indigo-300">
+                &amp; ADMINISTRATIVE ASSISTANT
+              </span>
             </h2>
 
-            <p className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-zinc-300 leading-relaxed font-light">
+            <p className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-zinc-200/90 leading-relaxed font-light">
               Dependable, accuracy-driven professional providing reliable bookkeeping, financial reconciliation, and executive administrative support tailored for modern growing businesses.
             </p>
 
-            {/* Badge pill: LET'S WORK TOGETHER */}
+            {/* Badge pill: LET'S WORK TOGETHER with Shimmer Effect */}
             <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-white/80 bg-white/10 hover:bg-white text-white hover:text-[#13005d] font-bold text-sm tracking-wider uppercase transition-all duration-300 backdrop-blur-sm shadow-xl hover:scale-105"
+                className="shimmer-button inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-white/80 bg-white/10 hover:bg-white text-white hover:text-[#13005d] font-bold text-sm tracking-wider uppercase transition-all duration-300 backdrop-blur-sm shadow-[0_10px_25px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_30px_rgba(99,102,241,0.4)] hover:scale-105 active:scale-95"
               >
                 <span>LET’S WORK TOGETHER</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
 
-              {/* Quick direct contact icons */}
+              {/* Quick direct contact icons with floating micro-hover */}
               <div className="flex items-center gap-3">
                 <a
                   href="tel:+639055212870"
                   title="Call +63 905-521-2870"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-110"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <img src="/briones-portfolio_files/c2d4d84b7b06512dec77300a0407103a.svg" alt="Phone" className="w-5 h-5 invert" />
                 </a>
                 <a
                   href="mailto:faithbriones1984@gmail.com"
                   title="Email faithbriones1984@gmail.com"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-110"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <img src="/briones-portfolio_files/6d0704f77f107f0f7e621031a0b87f40.png" alt="Email" className="w-5 h-5 invert" />
                 </a>
@@ -209,7 +213,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="LinkedIn Profile"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-110"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <img src="/briones-portfolio_files/72eba520b9cc247025e207a250ef3eeb.svg" alt="LinkedIn" className="w-5 h-5 invert" />
                 </a>
@@ -218,7 +222,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Facebook Profile"
-                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center text-white transition-all hover:scale-110"
+                  className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 border border-white/20 flex items-center justify-center text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <img src="/briones-portfolio_files/5cf389e86650420eb70dfe6eca0703fe.svg" alt="Facebook" className="w-5 h-5 invert" />
                 </a>
@@ -226,44 +230,44 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column: Hero Portrait in Oval Frame + Dynamic Badges */}
+          {/* Right Column: Hero Portrait in Oval Frame + Dynamic Floating Badges */}
           <div className="relative flex items-center justify-center">
             {/* Soft decorative glow */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-indigo-500 to-purple-400 opacity-30 blur-2xl rounded-full" />
+            <div className="absolute -inset-6 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-3xl rounded-full animate-pulse-glow" />
 
             {/* Oval Portrait Container */}
-            <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[440px] sm:h-[500px] lg:h-[540px] overflow-hidden rounded-[50%/60%_60%_40%_40%] border-4 border-white/30 shadow-2xl bg-zinc-900 group">
+            <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[440px] sm:h-[500px] lg:h-[540px] overflow-hidden rounded-[50%/60%_60%_40%_40%] border-4 border-white/30 shadow-[0_20px_50px_rgba(0,0,0,0.6)] bg-zinc-900 group">
               <img
                 src="/briones-portfolio_files/526dea370240d1475077ee2ab7470ab6.jpg"
                 alt="Ma. Faith B. Briones"
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
             </div>
 
-            {/* Badge 1: Certified Bookkeeper Seal Badge */}
-            <div className="absolute -bottom-6 -left-6 sm:-left-8 bg-white text-zinc-900 px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-zinc-200 hover:scale-105 transition-transform">
+            {/* Floating Badge 1: Certified Bookkeeper Seal Badge with float animation */}
+            <div className="absolute -bottom-6 -left-6 sm:-left-8 bg-white/95 backdrop-blur-md text-zinc-900 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border border-white/40 hover:scale-105 transition-transform animate-float">
               <img
                 src="/briones-portfolio_files/7653ff62e3eec31d5cefd810aa1b0403.png"
                 alt="Certified Seal"
-                className="w-10 h-10 object-contain"
+                className="w-11 h-11 object-contain animate-spin-slow"
               />
               <div>
-                <span className="block text-xs uppercase font-extrabold tracking-wider text-indigo-700">Official</span>
+                <span className="block text-[11px] uppercase font-extrabold tracking-wider text-indigo-700">Official</span>
                 <span className="block text-sm font-bold text-zinc-900 leading-tight">Certified Bookkeeper</span>
               </div>
             </div>
 
-            {/* Badge 2: Work with Faith */}
-            <div className="absolute -top-4 -right-4 sm:-right-6 bg-gradient-to-br from-indigo-900/90 to-purple-900/90 backdrop-blur-md text-white p-3.5 rounded-2xl shadow-xl border border-white/20 flex items-center gap-3">
+            {/* Floating Badge 2: Work with Faith with float-reverse animation */}
+            <div className="absolute -top-4 -right-4 sm:-right-6 bg-gradient-to-br from-indigo-900/90 to-purple-900/90 backdrop-blur-md text-white p-4 rounded-2xl shadow-2xl border border-white/30 flex items-center gap-3 animate-float-reverse hover:scale-105 transition-transform">
               <img
                 src="/briones-portfolio_files/da455a02e2e75cbe69c26856bcb9d28c.png"
                 alt="Work with Faith"
                 className="w-12 h-12 object-contain"
               />
               <div className="text-left pr-1">
-                <span className="block font-bold text-sm leading-tight">Work with Faith</span>
-                <span className="block text-[11px] text-zinc-300">18+ Yrs Experience</span>
+                <span className="block font-bold text-sm leading-tight text-white">Work with Faith</span>
+                <span className="block text-[11px] text-indigo-200">18+ Yrs Experience</span>
               </div>
             </div>
           </div>
